@@ -4,9 +4,8 @@ on: push
 
 jobs: 
   hello-world-job
-  build:
-    runs-on: ubuntu-latest
-      steps:
-        - name: check out repository code
-        - uses: actions/checkout@v4
-          run: echo "$(cat hellow_world.txt)"
+runs-on: ubuntu-latest
+steps:
+    - name: check out repository code
+    - uses: actions/checkout@v4
+    - run: echo "$(cat hellow_world.txt)"
